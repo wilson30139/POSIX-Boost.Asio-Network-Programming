@@ -3,7 +3,7 @@
 - Instructor: I-Chen Wu Professor
 
 ## About
-- This repository contains C++ network programming projects using POSIX system calls and Boost.Asio, covering shell implementation, concurrent servers, HTTP/CGI, and SOCK 4 proxy programming.
+This repository contains C++ network programming projects using POSIX system calls and Boost.Asio, covering shell implementation, concurrent servers, HTTP/CGI, and SOCK 4 proxy programming.
 
 ## [Project 1: NPShell](https://github.com/wilson30139/POSIX-Boost.Asio-Multi-Server/tree/main/Project%201)
 - NPShell is a Unix-like shell implemented in C++.
