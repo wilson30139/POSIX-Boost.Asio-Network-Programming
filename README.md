@@ -1,4 +1,4 @@
-## Course
+## [Course](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=112&Sem=2&CrsNo=535603&lang=en-us)
 - Name: Network Programming
 - Instructor: I-Chen Wu Professor
 
