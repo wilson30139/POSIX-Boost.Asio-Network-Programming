@@ -1,6 +1,6 @@
 ## Course
 - Name: Network Programming
-- I-Chen Wu
+- Instructor: I-Chen Wu Professor
 
 ## Project 1: NPShell
 - NPShell is a Unix-like shell implemented in C++.
