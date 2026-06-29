@@ -18,12 +18,19 @@
 - It supports user pipes, broadcast messages, and multi-user interaction.
 
 ## Project 3: HTTP Server and CGI Programs
-- HTTP Server and CGI Programs implementes an HTTP web server in C++.
-- It processes HTTP requests and returns appropriate HTTP responses.
-- It supports CGI (Common Gateway Interface) for generating dynamic web content.
-- It uses TCP socket programming for client-server communication.
-- It executes CGI programs using `fork()` and `exec()`.
-- It demonstrates HTTP communication, process management, and web server implementation.
+- Part 1 (Linux Environment)
+  - `http_server.cpp`
+    - Accepts HTTP requests from clients.
+    - Parses incoming HTTP requests.
+    - Executes and returns the corresponding CGI program based on the requested resource.
+  - `console.cpp`
+    - Implements the CGI program.
+    - Processes request forwarded by the HTTP server.
+    - Executes CGI logic and generates dynamic HTML responses.
+- Part 2 (Windows Environment)
+  - `cgi_server.cpp`
+    - Integrates the functionalities of both `http_server.cpp` and `console.cpp` into a single application.
+    - Handle HTTP request processing, CGI execution, and response generation within one server program.
 
 ## Project 4: SOCK 4
 - SOCKS 4 is a proxy protocol for relaying TCP connections.
