@@ -22,39 +22,39 @@ This repository includes projects covering Unix-like shell implementation, multi
 - It supports user pipes, broadcast messages, and multi-user interaction.
 
 # [Project 3: HTTP Server and CGI Programs](https://github.com/wilson30139/POSIX-Boost.Asio-Multi-Server/tree/main/Project%203)
-- Part 1 (Linux Environment)
-  - `http_server.cpp`
-    - Accepts HTTP requests from clients.
-    - Parses incoming HTTP requests.
-    - Executes and returns the corresponding CGI program based on the requested resource.
-  - `console.cpp`
-    - Implements the CGI program.
-    - Processes request forwarded by the HTTP server.
-    - Executes CGI logic and generates dynamic HTML responses.
-- Part 2 (Windows Environment)
-  - `cgi_server.cpp`
-    - Integrates the functionalities of both `http_server.cpp` and `console.cpp` into a single application.
-    - Handle HTTP request processing, CGI execution, and response generation within one server program.
+## Part 1 (Linux Environment)
+- `http_server.cpp`
+  - Accepts HTTP requests from clients.
+  - Parses incoming HTTP requests.
+  - Executes and returns the corresponding CGI program based on the requested resource.
+- `console.cpp`
+  - Implements the CGI program.
+  - Processes request forwarded by the HTTP server.
+  - Executes CGI logic and generates dynamic HTML responses.
+## Part 2 (Windows Environment)
+- `cgi_server.cpp`
+  - Integrates the functionalities of both `http_server.cpp` and `console.cpp` into a single application.
+  - Handle HTTP request processing, CGI execution, and response generation within one server program.
 
 # [Project 4: SOCK 4](https://github.com/wilson30139/POSIX-Boost.Asio-Multi-Server/tree/main/Project%204)
-- Part 1: SOCKS 4 CONNECT Operation
-  - Implements a SOCKS 4 proxy server supporting the CONNECT operation.
-  - Accepts client requests, parses the SOCKS 4 protocol, and establishes connections to destination servers.
-  - Applies firewall rules and returns Accept or Reject responses based on the connection request.
-- Part 2: SOCKS 4 BIND Operation
-  - Implements the BIND operation required for Active Mode FTP.
-  - Establishes FTP data connections between clients and servers through the SOCKS proxy.
-  - Supports large file transfers through the SOCKS proxy.
-- Part 3: CGI Proxy Client
-  - Extends the CGI program from Project 3 to operate as a SOCKS 4 client.
-  - Connects to mulitple remote shell servers through the SOCKS proxy using the CONNECT operation.
-  - Displays the outputs of multiple remote sessions simultaneously through a web-based interface.
-- Files
-  - `socks_server.cpp`
-    - Implements the SOCKS 4 proxy server.
-    - Handles both CONNECT and BIND operations.
-    - Parses SOCKS 4 requests, applies firewall rules, and forwards client connection to destination servers.
-  - `console.cpp`
-    - Implements the CGI proxy client.
-    - Parses CGI parameters, establishes connections to the SOCKS server, and communicates with multiple remote shell servers.
-    - Collects and displays the outputs of multiple remote sessions through a web interface.
+## Part 1: SOCKS 4 CONNECT Operation
+- Implements a SOCKS 4 proxy server supporting the CONNECT operation.
+- Accepts client requests, parses the SOCKS 4 protocol, and establishes connections to destination servers.
+- Applies firewall rules and returns Accept or Reject responses based on the connection request.
+## Part 2: SOCKS 4 BIND Operation
+- Implements the BIND operation required for Active Mode FTP.
+- Establishes FTP data connections between clients and servers through the SOCKS proxy.
+- Supports large file transfers through the SOCKS proxy.
+## Part 3: CGI Proxy Client
+- Extends the CGI program from Project 3 to operate as a SOCKS 4 client.
+- Connects to mulitple remote shell servers through the SOCKS proxy using the CONNECT operation.
+- Displays the outputs of multiple remote sessions simultaneously through a web-based interface.
+## Files
+- `socks_server.cpp`
+  - Implements the SOCKS 4 proxy server.
+  - Handles both CONNECT and BIND operations.
+  - Parses SOCKS 4 requests, applies firewall rules, and forwards client connection to destination servers.
+- `console.cpp`
+  - Implements the CGI proxy client.
+  - Parses CGI parameters, establishes connections to the SOCKS server, and communicates with multiple remote shell servers.
+  - Collects and displays the outputs of multiple remote sessions through a web interface.
