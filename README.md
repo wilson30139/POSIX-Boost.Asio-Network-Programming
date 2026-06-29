@@ -33,8 +33,24 @@
     - Handle HTTP request processing, CGI execution, and response generation within one server program.
 
 ## Project 4: SOCK 4
-- SOCKS 4 is a proxy protocol for relaying TCP connections.
-- It forwards traffic between clients and destination servers through a SOCKS proxy server.
-- It hides the client's IP address from the destination server.
-- It supports access control based on predefined firewall rules.
-- It is commonly used in proxy and firewall environments.
+- Part 1: SOCKS 4 CONNECT Operation
+  - Implements a SOCKS 4 proxy server supporting the CONNECT operation.
+  - Accepts client requests, parses the SOCKS 4 protocol, and establishes connections to destination servers.
+  - Applies firewall rules and returns Accept or Reject responses based on the connection request.
+- Part 2: SOCKS 4 BIND Operation
+  - Implements the BIND operation required for Active Mode FTP.
+  - Establishes FTP data connections between clients and servers through the SOCKS proxy.
+  - Supports large file transfers through the SOCKS proxy.
+- Part 3: CGI Proxy Client
+  - Extends the CGI program from Project 3 to operate as a SOCKS 4 client.
+  - Connects to mulitple remote shell servers through the SOCKS proxy using the CONNECT operation.
+  - Displays the outputs of multiple remote sessions simultaneously through a web-based interface.
+- Files
+  - `socks_server.cpp`
+    - Implements the SOCKS 4 proxy server.
+    - Handles both CONNECT and BIND operations.
+    - Parses SOCKS 4 requests, applies firewall rules, and forwards client connection to destination servers.
+  - `console.cpp`
+    - Implements the CGI proxy client.
+    - Parses CGI parameters, establishes connections to the SOCKS server, and communicates with multiple remote shell servers.
+    - Collects and displays the outputs of multiple remote sessions through a web interface.
