@@ -5,7 +5,8 @@
 - Instructor: Professor I-Chen Wu
 
 ## Introduction
-This repository contains a collection of C++ network programming projects developed using POSIX system calls and Boost.Asio. It focuses on fundamental networking concepts, including process management, concurrent server design, socket programming, inter-process communication, and asynchronous I/O.<br><br>
+This repository contains a collection of C++ network programming projects developed using POSIX system calls and Boost.Asio. It focuses on fundamental networking concepts, including process management, concurrent server design, socket programming, inter-process communication, and asynchronous I/O.
+
 The projects demonstrate the implementation of Unix-like shells, multi-user remote working servers, HTTP servers with CGI programs, and SOCKS 4 proxy servers. Together, they showcase the design and development of scalable network applications using POSIX APIs and the Boost.Asio networking library.
 
 ## Technologies
